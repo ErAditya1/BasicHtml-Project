@@ -11,25 +11,34 @@
       <img id="fanImage" src="./fan2.png" alt="fanImage" />
     </div>
     <div class="button">
-      <button onclick="rotateStart(1.5)">Start</button>
+      <button onclick="rotate(.4)" id="switchOn">Start</button>
+      <button onclick="rotate(0)" id="switchOff" >Stop</button>
       <button onclick="rotate(1)">1</button>
       <button onclick="rotate(.5)">2</button>
       <button onclick="rotate(.3)">3</button>
       <button onclick="rotate(.2)">4</button>
-      <button onclick="rotate(0)">Stop</button>
+      <button onclick="rotate(.1)">5</button>
+      
     </div>
     <script>
       function rotate(val) {
         let img = document.getElementById("fanImage");
           img.style.animationDuration = `${val}s`;
+          if(val>0){
+            document.getElementById("switchOn").style.display = "none";
+            document.getElementById("switchOff").style.display = "flex";
+          }else{
+            document.getElementById("switchOn").style.display = "flex";
+            document.getElementById("switchOff").style.display = "none";
+          }
       }
       function rotateStart(val) {
+        
         let img = document.getElementById("fanImage");
-        if (img.style.animationDuration != "0s") {
-          img.style.animationDuration = `0s`;
-        } else {
+        
+        img.style.animationDuration != "0s"
           img.style.animationDuration = `${val}s`;
-        }
+        
       }
       
     </script>

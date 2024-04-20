@@ -22,16 +22,17 @@ body{
     margin: auto;
     /* border: 2px solid black; */
     /* background: black; */
-    height: 30rem;
-    width: 30rem;
+    height: 35rem;
+    width: 35rem;
 }
 .container img{
     height: 100%;
     width: 100%;
     border-radius: 50%;
     animation: fanRotate linear  infinite ;
-    animation-duration: .5s;
+    animation-duration: "0s";
 }
+
 .button{
     display: flex;
     align-items: center;
@@ -60,6 +61,9 @@ body{
     background-color: teal;
     transition: all 0.3s ease-in-out;
     
+}
+#switchOff{
+    display: none;
 }
 .button button:hover{
     background-color: teal;
