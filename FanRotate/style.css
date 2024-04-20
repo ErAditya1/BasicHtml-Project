@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: white;
+    color: Black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: around;
+    margin: auto;
+    /* border: 2px solid black; */
+    /* background: black; */
+    height: 30rem;
+    width: 30rem;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    animation: fanRotate linear  infinite ;
+    animation-duration: .5s;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* border: 2px solid black; */
+    /* background: black; */
+    height: 20rem;
+    width: 20rem;
+}
+.button button{
+    height: 30px;
+    /* width: 90px; */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 4px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    transition: all 0.3s ease-in-out;
+    
+}
+.button button:hover{
+    background-color: teal;
+    color: white;
+}
+.button button:active{
+    transform: scale(1);
+    background-color: red;
+}
+.button button:visited{
+    background-color: red;
+    color: white;
+    transform: scale();
+}
+
+ @keyframes fanRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

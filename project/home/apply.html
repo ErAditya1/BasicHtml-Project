@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.S.I.C. Barabanki Apply</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style/bootsrap.min.css" />
+  <link rel="stylesheet" href="/style/style.css" />
+</head>
+
+<body>
+  <div id="preloader" class="loader">
+
+    <div class="ring ring1"></div>
+    <div class="ring ring2"></div>
+    <div class="ring ring3"></div>
+    <span class="loading">Loading...</span>
+    </div>
+  <header id="header_file"></header>
+
+  <div class="mwPageBlock File">
+    <div class="blockContents">
+      <div class="bannerWrapper" 
+          >
+          <img src="/image/edu2.webp" alt="">
+
+        <h1 class="bannerTitle">Login / Register</h1>
+      
+     
+    </div>
+    </div>
+    
+  </div>
+  <div class="pageBannerContent lgopen" >
+     
+    <nav class="pageBannerButtons" aria-labelledby="file-DJKZFK26A0RHS-title">
+      <ul style="margin: auto;position: relative;">
+        <li >
+          <div class="button" >
+            <button class="btn" style="font-size: 20px;font-weight: 600;color: #fff;"  onclick="loginForm();"> Log IN</button>
+            
+          </div>
+        </li>
+        <div>
+          <div class="button" >
+            <button class="btn" style="font-size: 20px;font-weight: 600;color: #fff;"  onclick="registrationForm();"> Register</button>
+          </div>
+        </div>
+        
+      </ul>
+      
+    </nav>
+  </div>
+  <div class="spacer"></div>
+
+  <section class="contentArea row " style="background-color: #fff; color: black; width: 100%;">
+    <div class="heading col-lg-12">
+      <h2 style="font-size: 1.8rem; font-weight: 800">
+        Sri Sai Inter College
+      </h2>
+    </div>
+
+    <div class="spacer col-lg-12"></div>
+    <div class="contentAreaWrap col-md-8" style="
+        box-shadow: 0 0 25px 0 black;
+        padding: 20px;
+        margin: auto;
+        width: 90%;
+        border-radius: 10px;
+        display: none;
+      " id="registration">
+      <!-- <div class="spacer"></div> -->
+      <div class="heading" style="border-bottom: none;">
+        <h2>
+          Registration Form
+        </h2>
+      </div>
+      <!-- <div class="heading" style="border: none">
+        <div id="createAccountLink" class="col-xs-12 crm-link text-center">
+          <h2 style="font-size: 20px">
+            <a style="text-decoration: none" href="/Apply/Account/Create">Click here to Sign In</a>
+          </h2>
+        </div>
+      </div> -->
+      <div class="page" style="width: 100%;">
+        <form name="sign-up-form" action="" method="post" autocomplete="off" style="width: 100%; " onsubmit=" registration();">
+
+          <!-- <p class="success register-success"></p> -->
+
+
+           <div class="row">
+            <div class="col-md-5 input">
+              <label><span class="star">First Name</span><span>Please enter first name </span></label>
+              <input type="text"  name="name1">
+              <p class="error name1-error"></p>
+            </div>
+            <div class="col-md-5">
+              <label><span class="sta">Last Name</span> <span>Please enter last name</span> </label>
+              <input type="text"  name="name2">
+              <p class="error name2-error"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 input">
+              <label><span class="star">Email</span> <span>Please enter an active email</span> </label>
+              <input type="email"  name="email1">
+              <p class="error email1-error"></p>
+            </div>
+            <div class="col-md-5">
+              <label><span class="star">Confirm Email</span> <span>Please enter confirm email</span> </label>
+              <input type="email"  name="email2">
+              <p class="error email2-error"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 input">
+              <label><span class="star">Serial No.</span><span>Please enter your Serial No.</span></label>
+              <input type="text" name="sr">
+              <p class="error sr-error"></p>
+            </div>
+            <div class="col-md-5 input">
+              <label><span class="star">Birth Date:</span><span>Please enter your date of Birth</span></label>
+              <input type="text" name="dob">
+              <p class="error dob-error"></p>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-5 input">
+              <label><span class="star">Mobile</span> <span>Please enter an active mobile number</span> </label>
+              <input type="text"  name="mobile1">
+              <p class="error mobile1-error"></p>
+            </div>
+            <div class="col-md-5">
+              <label><span class="star">Upload Image</span> <span>Please upload your image</span>
+              </label>
+              <input type="file" name="image">
+              <p class="error image-error"></p>
+            </div>
+          </div>
+          
+          <br>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="loginType">
+                <p>
+                  <input id="male" checked type="radio" name="type" value="male"> <label for="male">Male</label>
+                </p>
+                <p>
+                  <input id="female" type="radio" name="type" value="female"> <label for="female">Female</label>
+                </p>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-5 input">
+              <label><span class="star">City:</span><span>Please enter your city</span></label>
+              <input type="text"  name="city">
+              <p class="error city-error"></p>
+            </div>
+            <div class="col-md-5 input">
+              <label><span class="star">State:</span><span>Please enter your State</span></label>
+              <input type="text"  name="state">
+              <p class="error state-error"></p>
+            </div>
+          </div> 
+
+          <div class="row">
+            <div class="col-md-5 input">
+              <label><span class="star">Password</span> <span>Please use a strong password</span> </label>
+              <input type="password" name="psd">
+              <p class="error psd-error"></p>
+            </div>
+            <div class="col-md-5 input">
+              <label><span class="star">Confirm Password</span><span>Please type again your password</span> </label>
+              <input type="password" name="confirm">
+              <p class="error confirm"></p>
+            </div>
+          </div>
+
+          <div class="button" style="max-width: 150px;">
+            <input type="submit" class="btn" name="register-submition" value="Register"
+              style="font-size: 20px;  font-weight: 600;color: #fff;">
+          </div>
+          <p class="error register-error"></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="contentAreaWrap col-md-8" style="
+      box-shadow: 0 0 25px 0 black;
+      padding: 20px;
+      margin: auto;
+      border-radius: 10px;" 
+    
+    id="login">
+      <div class="heading" style="border-bottom: none;">
+        <h2>
+          Login Form
+        </h2>
+      </div>
+     
+      <br><br>
+      <div class="row page">
+        <form name="sign-in-form" action="" method="post" autocomplete="off" class="col-md-5">
+
+
+          <label><span class="star">Email</span> <span>Please enter a registerd email</span> </label>
+          <input type="email" name="email">
+          <p class="error email-error"></p>
+
+          
+          <label><span class="star">Password </span><span>Please enter your password</span> </label>
+          <input type="password"  name="password">
+          <p class="error paserr"></p>
+
+          <div class="loginType">
+            <p>
+              <input id="Student" checked type="radio" name="type" value="male"><label for="Student">Student</label>
+            </p>
+            <p>
+              <input id="Institute" type="radio" name="type" value="female"><label for="Institute">Institute</label>
+            </p>
+          </div>
+          <br>
+
+          <div class="button" style="max-width: 150px;">
+            <input type="submit" class="btn" name="register-submition" value="Sign In"
+              style="font-size: 20px;font-weight: 600;color: #fff;">
+          </div>
+
+          <p class="error register-error"></p>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <div class="spacer"></div>
+
+
+  <footer id="footer_file"></footer>
+  <script src="/js/javascript.js"></script>
+</body>
+
+</html>

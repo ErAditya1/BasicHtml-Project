@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Watch</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <h2>My digital watch</h2>
+
+    <div
+      class="outer"
+      style="display: flex; flex-direction: row; flex-wrap: nowrap"
+    >
+      <div class="inner">
+        <p id="hor"></p>
+      </div>
+      <div class="inner">
+        <p id="mnt"></p>
+      </div>
+      <div class="inner">
+        <p id="scnd"></p>
+      </div>
+      <div class="inner">
+        <p id="am" style="font-weight: 1000; font-size: 22px">AM</p>
+      </div>
+    </div>
+
+    <div class="outer" style="display: flex; flex-direction: row">
+      <div class="inner" style="width: auto; padding: 0 10px">
+        <p id="time" style="font-size: 25px"></p>
+      </div>
+      <div class="inner" style="width: auto; padding: 0 10px">
+        <p id="date" style="font-size: 25px"></p>
+      </div>
+      <div class="inner" style="width: auto; padding: 0 10px">
+        <p id="da" style="font-size: 25px"></p>
+      </div>
+    </div>
+
+    <h2>My Analog watch</h2>
+    <div class="analog" style="margin: 40px">
+      <div class="container">
+        <div class="watch">
+          <div class="hour-hand" id="hour-hand"></div>
+          <div class="minute-hand" id="minute-hand"></div>
+          <div class="second-hand" id="second-hand"></div>
+
+          <div class="center-circle">
+            
+          </div>
+          <div class="digits">
+            <p class="digit number1">1</p>
+            <p class="digit number2">2</p>
+            <p class="digit number3">3</p>
+            <p class="digit number4">4</p>
+            <p class="digit number5">5</p>
+            <p class="digit number6">6</p>
+            <p class="digit number7">7</p>
+            <p class="digit number8">8</p>
+            <p class="digit number9">9</p>
+            <p class="digit number10">10</p>
+            <p class="digit number11">11</p>
+            <p class="digit number12">12</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

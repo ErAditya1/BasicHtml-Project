@@ -1,0 +1,122 @@
+
+body{
+    background: aqua;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    margin: auto;
+    /* position: absolute; */
+    display: block;
+}
+
+.outer{
+    /* transform: translate(-50%, -50%); */
+    height: 50px;
+    margin: 40px;
+    border-radius: 6px;
+    display: inline-block;
+}
+.inner{
+    background: red;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid aqua;
+}
+.inner p{
+    
+    font-size: 30px;
+}
+
+
+/* Analog Watch */
+
+.analog{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .watch {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #333;
+    border-radius: 50%;
+  }
+  
+  .hour-hand,
+  .minute-hand,
+  .second-hand {
+    position: absolute;
+    background-color: #333;
+    border-radius: 3px;
+  }
+  
+  .hour-hand {
+    width: 6px;
+    height: 40px;
+    top: 60px;
+    left: 97px;
+    transform-origin: 50% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .minute-hand {
+    width: 4px;
+    height: 60px;
+    top: 40px;
+    left: 98px;
+    transform-origin: 50% 100%;
+  }
+  
+  .second-hand {
+    width: 2px;
+    height: 70px;
+    top: 30px;
+    left: 99px;
+    background-color: red;
+    transform-origin: 50% 100%;
+  }
+  
+  .center-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 95px;
+    left: 95px;
+  }
+  .digits{
+    top: 0;
+    right: 0;
+    position: absolute;
+
+  }
+  .digit{
+    font-size: 20px;
+    /* position: absolute; */
+  }
+  .number1{
+    top: 0;
+  }

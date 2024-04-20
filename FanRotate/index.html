@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan Rotater</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <img id="fanImage" src="./fan2.png" alt="fanImage" />
+    </div>
+    <div class="button">
+      <button onclick="rotateStart(1.5)">Start</button>
+      <button onclick="rotate(1)">1</button>
+      <button onclick="rotate(.5)">2</button>
+      <button onclick="rotate(.3)">3</button>
+      <button onclick="rotate(.2)">4</button>
+      <button onclick="rotate(0)">Stop</button>
+    </div>
+    <script>
+      function rotate(val) {
+        let img = document.getElementById("fanImage");
+          img.style.animationDuration = `${val}s`;
+      }
+      function rotateStart(val) {
+        let img = document.getElementById("fanImage");
+        if (img.style.animationDuration != "0s") {
+          img.style.animationDuration = `0s`;
+        } else {
+          img.style.animationDuration = `${val}s`;
+        }
+      }
+      
+    </script>
+  </body>
+</html>

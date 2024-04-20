@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Aadampur ID Card Approval Form</title>
+    <link rel="stylesheet" href="idCSS/Id_card.css" />
+    <link rel="stylesheet" href="idCSS/form.css" />
+    <!-- <link rel="icon"  type="image/x-icon" href="image.jpg"> -->
+</head>
+
+<body>
+    <header id="header">
+        <h1>Government Polytechnic Aadampur </h1>
+    </header>
+    
+    <div class="form_outer"id="form_outer">
+        <form onsubmit="sendInformation();  reset(); return false;">
+            <ul>
+                <li> ID Card Approval Form</li>
+
+                <li>
+                    <span>
+                        <p>Enrollment Number :</p>
+                    </span>
+                    <input type="text" id="input_1" value="" placeholder="Ex: E22223035500068" required>
+                    <span>
+                        <p class="bottom_text">Please enter your valid Enrollment No.</p>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <p>Student Name :</p>
+                    </span>
+                    <input type="text" id="input_2" required>
+                    <span>
+                        <p class="bottom_text">Name as per college record</p>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <p>Student D.O.B. :</p>
+                    </span>
+                    <input type="text" placeholder="Ex : 10 AUG 2000" id="input_3"  required>
+                    <span>
+                        <p class="bottom_text">Please enter your date of birth</p>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <p>Student Mob No. :</p>
+                    </span>
+                    <input type="number" id="input_4" required>
+                    <span>
+                        <p class="bottom_text">Please enter valid Mobile number</p>
+                    </span>
+                </li>
+
+                <li class="branch">
+                    <span>
+                        <p>Select Your Branch :</p>
+                    </span>
+                    <span><input type="radio" id="input_radio_1" name="q15_approval" checked=""/><label
+                            for="input_radio_1">Computer Science &
+                            Engineering</label></span>
+                    <span><input type="radio" id="input_radio_2" name="q15_approval" checked=""/><label
+                            for="input_radio_2">Machenical Engineering
+                            (Automobile)</label></span>
+                    <span><input type="radio" id="input_radio_3" name="q15_approval" checked=""/><label
+                            for="input_radio_3">Machenical
+                            Engineering
+                            (Production)</label></span>
+
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <p>Session : </p>
+                    </span>
+                    <input type="text" id="input_5" placeholder="Ex : 2023-26" required>
+                    <span>
+                        <p class="bottom_text">Please enter your academic session</p>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <p>Father's Name :</p>
+                    </span>
+                    <input type="text" id="input_6" required>
+                    <span>
+                        <p class="bottom_text">Please enyter Your father's name</p>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <p>Address :</p>
+                    </span>
+                    <textarea id="input_7" height="300px" required></textarea>
+                    <span>
+                        <p class="bottom_text">Please enter your address</p>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <p>Upload Image :</p>
+                    </span>
+                    
+                    <input type="file" id="input_8" accept="image/jpeg, image/png, image/jpg">
+                    <span>
+                        <p class="bottom_text">Please upload your pasport size photo</p>
+                    </span>
+                </li>
+               
+            </ul>
+            <div >
+              <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Form Layout -->
+ 
+
+
+  <!-- <center> -->
+    <main id="id_main" style="display: none;">
+      <div class="outer">
+        <div class="top">
+          <div class="logo">
+            <img src="idImages/GPA_logo.png" alt="Logo" />
+          </div>
+          <div class="tittle">
+            <p>GOVERNMENT POLYTECHNIC AADAMPUR TARABGANJ GONDA - 271401</p>
+            <p>INSTITUTE CODE - 2230</p>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="image">
+            <div class="enroll">
+              <p id="enroll"></p>
+            </div>
+            <div class="img" >
+              <img src="idImages/GPA_logo.png" alt="image" id="image"/> 
+              <!-- student images -->
+            </div>
+            <div class="session">
+              <p>Session: <span id="session">2022-25</span></p>
+            </div>
+            <div class="signature">
+              <div class="sign">
+                <img 
+                 src="idImages/principalSign.png" alt="signature" />
+              </div>
+              <p>PRINCIPAL</p>
+            </div>
+          </div>
+          <div class="info">
+            <table >
+              <tr>
+                <th>Name <span>:</span></th>
+                <td><span  id="name"></span></td>
+              </tr>
+              <tr>
+                <th>D.O.B. <span>:</span></th>
+                <td><span id="dob"></span></td>
+              </tr>
+              <tr>
+                <th>Mob.No. <span>:</span></th>
+                <td ><span id="mob"></span></td>
+              </tr>
+              <tr>
+                <th>Branch <span>:</span></th>
+                <td><span id="branch"></span></td>
+              </tr>
+              <tr>
+                <th>Father Name <span>:</span></th>
+                <td><span id="fName"></span></td>
+              </tr>
+              <tr >
+                <th>Address <span>:</span></th>
+                <td><span id="addrs"></span></td>
+              </tr>
+              
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="print">
+        <button type="submit" class="button" onclick="printID()">Print</button>
+      </div>
+    </main>
+  <!-- </center> -->
+</body>
+<script src="idCardJS/form.js"> </script>
+
+</html>

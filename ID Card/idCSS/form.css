@@ -1,0 +1,105 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+body{
+  background: white;
+  color: Black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header{
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  
+}
+h1{
+  font-size: 25px;
+
+}
+.form_outer{
+  border: 6px solid black;
+  border-radius: 8px;
+  height: auto;
+  display: flex;
+  width: 90%;
+  background: rgba(0, 255, 255, 0.247);
+  margin: 10px;
+}
+
+.devider{
+  height:1px;
+  width: 100%;
+  background: black;
+}
+.branch{
+  display: flex;
+  flex-direction: column;
+  
+}
+.branch input{
+  width: auto;
+  height: auto;
+  margin: 5px;
+}
+ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+li{
+  list-style: none;
+  margin: 30px;
+  max-width: 350px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+li span{
+  margin: 10px 0;
+}
+ul li:nth-child(1){
+  text-align: center;
+  font-size: 25px;
+  background: rgb(0, 255, 174);
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
+  border-bottom: 2px solid ;
+  border-radius: 0;
+}
+li:hover{
+  background: rgba(128, 101, 209, 0.184);
+  /* padding: 20px; */
+}
+input,textarea{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 15px;
+  background: white;
+}
+textarea{
+  height: 100px;
+}
+textarea:hover,input:hover{
+  border: 3px solid rgb(128, 101, 209);
+}
+span p{
+  font-size: 18px;
+  font-weight: 600;
+}
+.bottom_text{
+  font-size: 13px;
+  font-weight: 400;
+}
